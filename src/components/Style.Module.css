@@ -1,0 +1,62 @@
+.button-container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.button-container button {
+    width: 13em;
+    height: 4em;
+    margin: 3em;
+    /* border: solid; */
+    border-radius: .3em;
+    color: white;
+}
+
+.cm1 {
+    border-color: #df4706;
+    background-color: #df4706;
+    box-shadow: #be3c04 3px 3px 3px;
+}
+
+.cm1:hover {
+    background-color: #f4c0aa;
+    color: #df4706;
+    box-shadow: #9f7d6e 3px 3px 3px;
+}
+
+.cm2 {
+    border-color: #067720;
+    background-color: #067720;
+    box-shadow: #045216 3px 3px 3px;
+}
+
+.cm2:hover {
+    background-color: #92c79e;
+    color: #067720;
+    box-shadow: #678c70 3px 3px 3px;
+}
+
+.cm3 {
+    border-color: #064edf;
+    background-color: #307ad4;
+    box-shadow: #307ad4 3px 3px 3px;
+}
+
+.cm3:hover {
+    color: #064edf;
+    background-color: rgb(145, 177, 240);
+    box-shadow: #879cb7 3px 3px 3px;
+}
+
+.cm4 {
+    border-color: #064edf;
+    background-image: linear-gradient( rgb(248, 123, 215), #5486eb);
+    box-shadow: #064edf 3px 3px 3px;
+}
+
+.cm4:hover {
+    color: #a8366d;
+    background-image: linear-gradient( rgb(246, 179, 228), #aec6f6);
+    box-shadow: #879cb7 3px 3px 3px;
+}
