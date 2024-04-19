@@ -30,6 +30,8 @@
         border-color: #dd622d;
         background-color: #de6633;
         box-shadow: #ae461a 3px 3px 3px;
+        width: 13.2em;
+        height: 4.2em;
     }
     
     .cm2 {
@@ -49,6 +51,8 @@
         border-color: #1b7230;
         background-color: #247436;
         box-shadow: #145a24 3px 3px 3px;
+        width: 13.2em;
+        height: 4.2em;
     }
     
     .cm3 {
@@ -68,6 +72,8 @@
         border-color: #376edb;
         background-color: #6194d2;
         box-shadow: #4986d2 3px 3px 3px;
+        width: 13.2em;
+        height: 4.2em;
     }
     
     .cm4 {
@@ -86,4 +92,6 @@
         color: #dfbacc;
         border-color: #3166cf;
         background-image: linear-gradient( rgb(244, 154, 220), #779ce8);
+        width: 13.2em;
+        height: 4.2em;
     }

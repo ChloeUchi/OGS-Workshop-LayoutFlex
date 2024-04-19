@@ -2,11 +2,9 @@ import React from 'react'
 import '@components/Style.LayoutFlexWorkshop2.css'
 import imgCalendar from '@assets/icon-calendar.png'
 import imgRestuarant from '@assets/restuarant.png'
-import Arrow2 from '@assets/arrow2.png'
 import holdMoney from '@assets/hand-hold-money.png'
 import shopBag from '@assets/shop-bag.png'
 import coinImg from '@assets/icon-coins.png'
-import Arrow from '@assets/arrow.png'
 import Menuham from '@assets/menu-hamburger.png'
 import GolfLeaf from '@assets/gold-leaf.png'
 import VisaImg from '@assets/visa-svgrepo-com.png'
@@ -14,12 +12,16 @@ import hamburgerNemu from '@assets/nemu-hamburger-white.png'
 import CalendarWhite from '@assets/icon-calendar-white.png'
 import downArrow from '@assets/down-arrow-weekly.png'
 import { FaArrowUp, FaArrowDown } from "react-icons/fa6";
+import { BiDollar } from "react-icons/bi";
+import { useNavigate } from 'react-router-dom'
 
 function LayoutFlexWorkshop2() {
+  const navigator = useNavigate();
   return (
-    <div className='flex gap-2'>
-      <div className='visa-card-1'>
-        <div className='w-[390px] place-content-center bg-slate-50'>
+    <div>
+    <div className='flex flex-wrap gap-2 '>
+      <div className='visa-card-1 max-w-[50%]'>
+        <div className='max-w-[390px] place-content-center bg-slate-50'>
           <div className='text-left font-sans m-[1.5em]'>
             <div className='flex justify-between'>
               <h3>All my accounts</h3>
@@ -27,13 +29,16 @@ function LayoutFlexWorkshop2() {
             </div>
             <p className='text-[#d3d3d3]'>June 10, 2018</p>
           </div>
-          <div className='ml-[1.5em] mr-[1.5em] border-2 rounded-full'>
-            <div className='p-[1em] m-15px text-white bg-gradient-to-b from-[#415981] to-[#274376] border rounded-md'>
+          <div>
+            <div className=' relative w-[90%] mx-[1.5em] p-[1em]  text-white bg-gradient-to-r from-[#3b657c] to-[#06354f] rounded-md shadow-lg'>
               <img className='pl-[5px] w-[3.5em]' src={VisaImg} alt="" />
-              <p className='pr-[3.5em] text-end text-[#AAFF00] text-xs'>Available Balance</p>
+              <p className='mr-[1em] text-end text-[#AAFF00] text-xs'>Available Balance</p>
               <div className='flex justify-between'>
                 <img className='ml-[13px] w-[35px] ' src={GolfLeaf} alt="" />
-                <h1 className='pr-[1.5em] text-2xl'>$ 7,392.00</h1>
+                <div className='flex justify-center gap-2 '>
+                  <div className='w-[20px] h-[20px] mt-[8px] border-black rounded-full bg-black'><BiDollar className='w-[18px] ml-[1px] mt-[2px]' /></div>
+                  <h1 className='text-2xl text-white'>7,392.00</h1>
+                </div>
               </div><br />
               <h1 className='text-[#8a9ebf] text-2xl text-center'>42012&nbsp;&nbsp; 3049&nbsp;&nbsp; 2800&nbsp;&nbsp; 9815</h1>
               <br />
@@ -43,38 +48,39 @@ function LayoutFlexWorkshop2() {
               </div>
             </div>
           </div>
-          <div className='ml-[2em] mr-[2em] mt-[1em] mb-[1em] border-2 border-white shadow-lg'>
-            <ul className='grid grid-cols-2 p-[10px] bg-white'>
+
+          <div className='mx-[1em] my-[1em] border-2 border-white shadow-lg'>
+            <ul className='rounded-md shadow-md flex gap-5 around justify-center items-center py-2 px-8 bg-white'>
               <li>
                 <p className='ml-[2em] border-2 border-gray-200 rounded-full text-center w-[6em] shadow'>Income</p>
-                <ul className='grid grid-cols-2 justify-center pl-[2em] pr-[6em] pt-[0.3em]'>
+                <ul className='flex justify-center pl-[2em] pr-[2em] pt-[0.3em]'>
                   <li>
-                    <div className='text-green-500'>
-                      <FaArrowDown/>
+                    <div className='text-green-500 mt-[4px]'>
+                      <FaArrowDown />
                     </div>
                   </li>
                   <li>
-                    <p className='text-center text-[#2FD646]'>$9,302.00</p>
+                    <p className='text-center text-[#2FD646] ml-[5px]'>$9,302.00</p>
                   </li>
                 </ul>
               </li>
 
               <li>
                 <p className='ml-[2em] border-2 border-gray-200 rounded-full text-center w-[6em] shadow'>Expense</p>
-                <ul className='grid grid-cols-2 justify-center pl-[2em] pr-[6em] pt-[0.3em]'>
+                <ul className='flex justify-center pl-[2em] pr-[2em] pt-[0.3em]'>
                   <li>
-                  <div className='text-red-500'>
-                  <FaArrowUp />
-                  </div>
+                    <div className='text-red-500 mt-[5px]'>
+                      <FaArrowUp />
+                    </div>
                   </li>
                   <li>
-                    <p className='text-center text-[#FF3232]'>$2,790.00</p>
+                    <p className='text-center text-[#FF3232] ml-[5px]'>$2,790.00</p>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-          <div className='pl-[2em] pr-[2em]'>
+          <div className='px-[2em] mt-[1.5em]'>
             <div className='flex justify-between'>
               <h1 className='text-xl'>Details of movements</h1>
               <img className='w-[25px]' src={imgCalendar} alt="" />
@@ -90,7 +96,9 @@ function LayoutFlexWorkshop2() {
                 </div>
                 <div className='flex flex-wrap'>
                   <h1 className='text-[#FF3232]'>$170&nbsp;&nbsp;</h1>
-                  <img className='w-[10px] h-[10px] justify-self-center' src={Arrow2} alt="" />
+                  <div className='text-red-500 mt-[5px]'>
+                    <FaArrowUp />
+                  </div>
                 </div>
               </li>
               <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -103,7 +111,9 @@ function LayoutFlexWorkshop2() {
                 </div>
                 <div className='flex flex-wrap'>
                   <h1 className='text-[#2FD646]'>$1200&nbsp;&nbsp;</h1>
-                  <img className='w-[10px] h-[10px] justify-self-center' src={Arrow} alt="" />
+                  <div className='text-green-500 mt-[5px]'>
+                    <FaArrowDown />
+                  </div>
                 </div>
               </li>
               <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -116,7 +126,9 @@ function LayoutFlexWorkshop2() {
                 </div>
                 <div className='flex flex-wrap'>
                   <h1 className='text-[#FF3232]'>$50&nbsp;&nbsp;</h1>
-                  <img className='w-[10px] h-[10px] justify-self-center ' src={Arrow2} alt="" />
+                  <div className='text-red-500 mt-[5px]'>
+                    <FaArrowUp />
+                  </div>
                 </div>
               </li>
               <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -129,76 +141,86 @@ function LayoutFlexWorkshop2() {
                 </div>
                 <div className='flex flex-wrap'>
                   <h1 className='text-[#2FD646]'>$1200&nbsp;&nbsp;</h1>
-                  <img className='w-[10px] h-[10px] justify-self-center' src={Arrow} alt="" />
+                  <div className='text-green-500 mt-[5px]'>
+                    <FaArrowDown />
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
+          <br />
         </div>
-        </div>
-        <div className='visa-card-2'>
-          <div className="w-[390px]">
-            <div className='bg-gradient-to-b from-[#546a90] to-[#1c3667] pt-[1em]'>
-              <div className='flex justify-between p-[1em] pb-[2em]'>
-                <img className='w-[15px] h-[15px]' src={hamburgerNemu} alt="" />
-                <img className='w-[20px]' src={CalendarWhite} alt="" />
-              </div>
-              <div className='text-center'>
-                <p className='text-[#AAFF00] text-xs content-center'>Available Balance</p>
-                <h1 className='text-2xl text-white'>$ 7,392.00</h1>
-                <p className='text-[#9db0cf]'>June 9, 2018</p>
-              </div>
-
-              <div className='bg-gradient-to-b from-[#3f567d] to-[#1c3667] border border-[#3f567d] rounded m-[2em] p-[0.7em] shadow-md'>
-                <h1 className='text-[#9db0cf] text-2xl text-center'>42012&nbsp;&nbsp; 3049&nbsp;&nbsp; 2800&nbsp;&nbsp; 9815</h1>
-                <br />
-                <div className='flex justify-between text-[#dedede] text-xs'>
-                  <p>EXPIRE &#9656; 02/22 </p>
-                  <p>CVC CODE &#9656; 230</p>
-                </div>
-              </div>
-              <br />
+      </div>
+      <div className='visa-card-2 max-w-[50%]'>
+        <div className="max-w-[390px]">
+          <div className='bg-gradient-to-r from-[#3b657c] to-[#06354f] pt-[1em] mb-[2em] h-[20em]'>
+            <div className='flex justify-between p-[1em] pb-[2em]'>
+              <img className='w-[15px] h-[15px]' src={hamburgerNemu} alt="" />
+              <img className='w-[20px]' src={CalendarWhite} alt="" />
             </div>
-            <div className='ml-[2em] mr-[2em] mt-[-2.5em] border-2 border-white rounded shadow-lg bg-white'>
-              <div>
-                <ul className='grid grid-cols-2 p-[10px] '>
+            <div className='text-center'>
+              <p className='text-[#AAFF00] text-xs content-center'>Available Balance</p>
+              <div className='flex justify-center gap-2 text-white'>
+                <div className='w-[20px] h-[20px] mt-[8px] border-black rounded-full bg-black'><BiDollar className='w-[18px] ml-[1px] mt-[2px]' /></div>
+                <h1 className='text-2xl text-white'>7,392.00</h1>
+              </div>
+              <p className='text-[#9db0cf]'>June 9, 2018</p>
+            </div>
+
+            <div className='bg-gradient-to-r from-[#3b657c] to-[#06354f] border-[#3f567d] rounded-md ml-[2em] mr-[2em] p-[0.7em] shadow-md'>
+              <h1 className='text-[#9db0cf] text-2xl text-center'>42012&nbsp;&nbsp; 3049&nbsp;&nbsp; 2800&nbsp;&nbsp; 9815</h1>
+              <br />
+              <div className='flex justify-between text-[#dedede] text-xs'>
+                <p>EXPIRE &#9656; 02/22 </p>
+                <p>CVC CODE &#9656; 230</p>
+              </div>
+            </div>
+            <br />
+          </div>
+
+          <div>
+            <div className='  bg-slate-50'>
+              {/* *************************** */}
+              <div className='relative flex items-center justify-center h-full'>
+                <ul className="rounded-md shadow-md flex gap-10 around justify-center items-center py-2 px-8 bg-white absolute mt-[-4.5em] max-w-[100%]">
                   <li>
-                    <p className='ml-[2em] border-2 border-gray-200 rounded-full text-center w-[6em] shadow'>Income</p>
-                    <ul className='grid grid-cols-2 justify-center pl-[2em] pr-[6em] pt-[0.3em]'>
+                    <p className=' border-2 border-gray-200 rounded-full text-center max-w-[6em] shadow'>Income</p>
+                    <ul className='flex justify-center pr-[2em] pt-[0.3em]'>
+                      {/* lkooiujhiu */}
                       <li>
-                      <div className='text-green-500'>
-                  <FaArrowUp />
-                  </div>
+                        <div className='text-green-500 mt-[4px]'>
+                          <FaArrowUp />
+                        </div>
                       </li>
                       <li>
-                        <p className='text-center text-[#2FD646]'>$9,302.00</p>
+                        <p className='text-center text-[#2FD646] ml-[5px]'>$9,302.00</p>
                       </li>
                     </ul>
                   </li>
 
                   <li>
-                    <p className='ml-[2em] border-2 border-gray-200 rounded-full text-center w-[6em] shadow'>Expense</p>
-                    <ul className='grid grid-cols-2 justify-center pl-[2em] pr-[6em] pt-[0.3em]'>
+                    <p className=' border-2 border-gray-200 rounded-full text-center max-w-[6em] shadow'>Expense</p>
+                    <ul className='flex justify-center  pt-[0.3em]'>
                       <li>
-                      <div className='text-red-500'>
-                  <FaArrowUp />
-                  </div>
+                        <div className='text-red-500 mt-[4px]'>
+                          <FaArrowUp />
+                        </div>
                       </li>
                       <li>
-                        <p className='text-center text-[#FF3232]'>$2,790.00</p>
+                        <p className='text-center text-[#FF3232] ml-[5px]'>$2,790.00</p>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </div>
-              <div className='bg-slate-50 p-[1.5em]'>
+              <div className='p-[1.5em] pt-[5em] w-[100%] bg-slate-50 mt-[-2.2em] '>
                 <div className='flex justify-between '>
-                  <h1 className='text-xl'>Details of movements</h1>
+                  <h1 className='text-xl text-gray-600'>Details of movements</h1>
                   <div>
                     <div className='flex'>
-                  <p className='text-sm text-gray-500'>Weekly </p>
-                  <img className='w-[10px] h-[7px] mt-[7px] ml-[2px]' src={downArrow}/>
-                  </div>
+                      <p className='text-sm text-gray-500 mt-[5px]'>Weekly </p>
+                      <img className='w-[10px] h-[7px] mt-[12px] ml-[3px]' src={downArrow} />
+                    </div>
                   </div>
                 </div>
                 <ul className='mt-[1em] bg-white'>
@@ -212,7 +234,9 @@ function LayoutFlexWorkshop2() {
                     </div>
                     <div className='flex flex-wrap'>
                       <h1 className='text-[#FF3232]'>$170&nbsp;&nbsp;</h1>
-                      <img className='w-[10px] h-[10px] justify-self-center' src={Arrow2} alt="" />
+                      <div className='text-red-500 mt-[5px]'>
+                        <FaArrowUp />
+                      </div>
                     </div>
                   </li>
                   <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -220,12 +244,14 @@ function LayoutFlexWorkshop2() {
                       <img className='w-[30px]' src={holdMoney} alt="" />
                     </div>
                     <div>
-                      <p className='text-sm'>Salary Deposit</p>
+                      <p className='text-sm '>Salary Deposit</p>
                       <p className='text-xs text-[#CDCDCD]'>June 1, 2018</p>
                     </div>
                     <div className='flex flex-wrap'>
                       <h1 className='text-[#2FD646]'>$1200&nbsp;&nbsp;</h1>
-                      <img className='w-[10px] h-[10px] justify-self-center' src={Arrow} alt="" />
+                      <div className='text-green-500 mt-[5px]'>
+                        <FaArrowDown />
+                      </div>
                     </div>
                   </li>
                   <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -238,7 +264,9 @@ function LayoutFlexWorkshop2() {
                     </div>
                     <div className='flex flex-wrap'>
                       <h1 className='text-[#FF3232]'>$50&nbsp;&nbsp;</h1>
-                      <img className='w-[10px] h-[10px] justify-self-center ' src={Arrow2} alt="" />
+                      <div className='text-red-500 mt-[5px]'>
+                        <FaArrowUp />
+                      </div>
                     </div>
                   </li>
                   <li className='flex justify-between border-2 border-white rounded shadow-lg p-[0.5em] mt-[1em]'>
@@ -251,7 +279,9 @@ function LayoutFlexWorkshop2() {
                     </div>
                     <div className='flex flex-wrap'>
                       <h1 className='text-[#2FD646]'>$1200&nbsp;&nbsp;</h1>
-                      <img className='w-[10px] h-[10px] justify-self-center' src={Arrow} alt="" />
+                      <div className='text-green-500 mt-[5px]'>
+                        <FaArrowDown />
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -259,6 +289,9 @@ function LayoutFlexWorkshop2() {
             </div>
           </div>
         </div>
+      </div>
+      </div>
+      <div><button onClick={()=>navigator('/')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Back</button></div>
     </div>
   )
 }
