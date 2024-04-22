@@ -31,7 +31,7 @@ function TailwindStyle() {
                     </div>
                     <div className="info-container flex flex-col justify-center place-items-center lg:justify-around  p-[2em] lg:p-[0] drop-shadow-xl">
                         <div>
-                            <h1 className='text-[2.5em] lg:text-[3em] bg-gradient-to-r from-[#2a3154] via-[#FF5151] to-[#161E54] text-transparent bg-clip-text font-extrabold'>Chloe Uchi</h1>
+                            <h1 className='text-[2.5em] lg:text-[3em] bg-gradient-to-r from-[#2a3154] via-[#FF5151] to-[#161E54] text-transparent bg-clip-text font-extrabold'>Chloe Uchinaga</h1>
                             <h2 className='text-[1.5em]'>Front-End Internship</h2>
                         </div>
                         <div className="container ml-[5em] mt-5 lg:mt-0 lg:ml-0">
