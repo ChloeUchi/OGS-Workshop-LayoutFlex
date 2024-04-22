@@ -13,7 +13,8 @@ function StyleLearn() {
           <button className="cm3">CLICK ME</button><br />
           <button className="cm4">CLICK ME</button><br />
           <button onClick={() => navigator('/layoutflexworkshop1')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Layout Flex 1</button> <br />
-          <button onClick={() => navigator('/layoutflexworkshop2')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Layout Flex 2</button>
+          <button onClick={() => navigator('/layoutflexworkshop2')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Layout Flex 2</button><br />
+          <button onClick={() => navigator('/tailwindstyle')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>TailwindCSS</button>
 
         </div>
       </div>

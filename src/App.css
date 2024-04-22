@@ -14,7 +14,22 @@
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
 }
 
+@layer base {
+    @font-face {
+        font-family: 'myFont';
+        src: url(/src/assets/PetitFormalScript-Regular.ttf) format('ttf');
+    }
+}
+
+
+/* 
 @font-face {
     font-family: myFirstFont;
     src: url(./assets/Kanit-Medium.ttf);
-}
+} */
+
+
+/* @font-face {
+    font-family: myFont;
+    src: url(./assets/Itim-Regular.ttf);
+} */

@@ -142,7 +142,7 @@ function LayoutFlexWorkshop1() {
                 </div>
 
             </div>
-            <div><button onClick={()=>navigator('/')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Back</button></div>
+            <div><button onClick={() => navigator('/')} className='bg-[#0a2d3e] text-white border-solid rounded-lg h-[3em] w-[8em] mt-[2em] mb-[2em]'>Back</button></div>
         </div>
 
     )
