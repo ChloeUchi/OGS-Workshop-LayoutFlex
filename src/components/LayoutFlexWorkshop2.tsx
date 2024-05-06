@@ -19,7 +19,7 @@ function LayoutFlexWorkshop2() {
   const navigator = useNavigate();
   return (
     <div>
-      <div className='flex flex-wrap gap-2 '>
+      <div className='flex flex-wrap gap-2'>
         <div className='visa-card-1 max-w-[50%]'>
           <div className='max-w-[390px] place-content-center bg-slate-50'>
             <div className='text-left font-sans m-[1.5em]'>
@@ -105,7 +105,7 @@ function LayoutFlexWorkshop2() {
                   <div>
                     <img className='w-[30px]' src={holdMoney} alt="" />
                   </div>
-                  <div>
+                  <div className=''>
                     <p className='text-sm'>Salary Deposit</p>
                     <p className='text-xs text-[#CDCDCD]'>June 1, 2018</p>
                   </div>
