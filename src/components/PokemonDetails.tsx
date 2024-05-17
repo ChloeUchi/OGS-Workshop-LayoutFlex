@@ -45,10 +45,6 @@ const PokemonDetails = () => {
         }
     };
 
-
-
-
-
     return (
         <div>
             <div className="navbar flex justify-start h-full bg-orange-400 w-[100vh]">

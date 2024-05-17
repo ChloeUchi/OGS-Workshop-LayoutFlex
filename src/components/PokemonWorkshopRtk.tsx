@@ -41,7 +41,8 @@ const PokemonWorkshopRtk = () => {
             <div className='grid lg:grid-cols-5 md:grid-cols-3 justify-center mt-[2em]'>
                 {result_data_pokemon.data?.results?.map((item, index) => (
                     <div key={index} className='flex flex-col justify-center items-center w-[14em]  text-center bg-gray-400 rounded-xl m-2 py-0'>
-                        <Link className='rounded-xl  pt-6 bg-white' to={`/pokemon/${item.name}?page=${searchParams.get('page')}`} >
+                        <Link className='rounded-xl  pt-6 bg-white' to={`/pokemon/${item.name}`} >
+                        {/* <Link className='rounded-xl  pt-6 bg-white' to={`/pokemon/${item.name}?page=${searchParams.get('page')}`} > */}
                             <div className='flex justify-center items-center '>
                                 <img
                                     className=''

@@ -9,21 +9,21 @@ import { useGetListPokemon2Mutation } from '@service/PokemonService/PokemonServi
 
 function App() {
 
-  const [getListPokemon, result_data_pokemon] = useGetListPokemon2Mutation();
-  const fnGetListPokemon = async () => {
-    try {
-      await getListPokemon({
-        limit: '10',
-        offset: '0'
-      }).unwrap();
-    } catch (error) {
-      console.log({ error })
-    }
-  }
-  useEffect(() => {
-    fnGetListPokemon();
-  }, [])
-console.log({result_data_pokemon})
+  // const [getListPokemon, result_data_pokemon] = useGetListPokemon2Mutation();
+  // const fnGetListPokemon = async () => {
+  //   try {
+  //     await getListPokemon({
+  //       limit: '10',
+  //       offset: '0'
+  //     }).unwrap();
+  //   } catch (error) {
+  //     console.log({ error })
+  //   }
+  // }
+  // useEffect(() => {
+  //   fnGetListPokemon();
+  // }, [])
+// console.log({result_data_pokemon})
   return (
     <Provider store={Store}>
       <RouterProvider router={routers}/>

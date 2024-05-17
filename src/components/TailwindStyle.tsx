@@ -1,5 +1,5 @@
 import React from 'react'
-import myImg from '@assets/pus.png'
+import myImg from '@assets/cartoon-man-5053708_1280.png'
 import { FaPhone } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 import { FaLocationDot } from "react-icons/fa6";
